@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soporte — Ajolotienda</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    header {
+      background: #00695c;
+      color: white;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header p { font-size: 0.95rem; opacity: 0.85; }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #00695c;
+      margin-bottom: 14px;
+    }
+    h3 {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 20px 0 4px;
+    }
+    h3:first-child { margin-top: 0; }
+    p, li { font-size: 0.97rem; color: #333; }
+    ul { padding-left: 20px; margin-top: 6px; }
+    ul li { margin-bottom: 5px; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    @media (max-width: 500px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .contact-item {
+      background: #f0faf8;
+      border-radius: 10px;
+      padding: 16px 20px;
+      border: 1px solid #c8e6e1;
+    }
+    .contact-item .label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #00695c;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .contact-item a {
+      color: #00695c;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .contact-item a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #aaa;
+      padding: 24px;
+    }
+    footer a { color: #aaa; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Centro de Soporte</h1>
+  <p>Ajolotienda — Tu punto de venta en el bolsillo</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Contáctanos</h2>
+    <p>Estamos aquí para ayudarte. Escríbenos y te respondemos a la brevedad.</p>
+    <div class="contact-grid" style="margin-top:16px;">
+      <div class="contact-item">
+        <div class="label">Correo electrónico</div>
+        <a href="mailto:soporte@ajolotienda.com">soporte@ajolotienda.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="label">Horario de atención</div>
+        <span style="font-size:0.95rem; color:#333;">Lun – Vie, 9:00 – 18:00 (CDMX)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Preguntas frecuentes</h2>
+
+    <h3>¿Necesito internet para usar Ajolotienda?</h3>
+    <p>No. Las funciones principales (ventas, inventario, caja y clientes) funcionan completamente sin conexión. El internet solo se necesita para mostrar anuncios en la app y pagar tu suscripcion mensual o anual para desbloquear las funciones extras.</p>
+
+    <h3>¿Cómo cancelo mi suscripción premium?</h3>
+    <p>Puedes cancelar en cualquier momento desde la configuración de tu dispositivo:</p>
+    <ul>
+      <li><strong>iPhone/iPad:</strong> Ajustes → Tu nombre → Suscripciones → Ajolotienda → Cancelar suscripción</li>
+      <li><strong>Android:</strong> Google Play → Perfil → Pagos y suscripciones → Ajolotienda → Cancelar</li>
+    </ul>
+
+    <h3>¿Mis datos se borran si cancelo?</h3>
+    <p>No. Toda tu información queda guardada en tu dispositivo. Al cancelar solo pierdes acceso a las funciones premium, pero tus datos (productos, clientes, ventas) permanecen intactos.</p>
+
+    <h3>¿Cómo escaneo códigos de barras?</h3>
+    <p>Al agregar o buscar un producto, toca el ícono de cámara o scanner. Apunta al código de barras y la app lo detecta automáticamente. Asegúrate de tener buena iluminación.</p>
+
+    <h3>¿Puedo usar la app en varios dispositivos?</h3>
+    <p>Actualmente la app funciona de forma local por dispositivo. La sincronización entre dispositivos es una función que estamos desarrollando para próximas versiones.</p>
+
+    <h3>Olvidé mi contraseña, ¿qué hago?</h3>
+    <p>La app no requiere logins ni contraseñas. Puedes acceder directamente a la app. Si perdiste tus datos, puedes restaurarlos desde una copia de seguridad si la tienes.</p>
+
+    <h3>La app se cierra o no funciona bien, ¿qué hago?</h3>
+    <ul>
+      <li>Cierra la app completamente y vuelve a abrirla.</li>
+      <li>Verifica que tienes la versión más reciente instalada.</li>
+      <li>Reinicia tu dispositivo.</li>
+      <li>Si el problema persiste, escríbenos a soporte@ajolotienda.com con una descripción del problema y el modelo de tu dispositivo o escribenos una reseña en la tienda de apps de tu dispositivo.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Sobre Ajolotienda</h2>
+    <p>Ajolotienda es una app de punto de venta diseñada para negocios pequeños en Latinoamérica: tienditas, salones, papelerías, fondas y vendedores de ruta. Nuestra misión es darte las herramientas que tu negocio siempre mereció, sin complicaciones y sin letra chica.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Ajolotienda. Todos los derechos reservados. &nbsp;|&nbsp;
+  <a href="privacy-policy.html">Política de Privacidad</a>
+</footer>
+
+</body>
+</html>
